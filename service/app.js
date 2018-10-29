@@ -36,4 +36,4 @@ app.use(bodyParser())
 // routerCreater(app, routerConfigGenerator())
 
 app.listen(port)
-console.log('jjjjjjjj')
+console.log('ok~')
