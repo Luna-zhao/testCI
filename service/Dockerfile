@@ -19,6 +19,6 @@ RUN ls
 RUN yarn
 
 #暴露给主机的端口号
-EXPOSE 8888
+EXPOSE 8089
 #执行npm start命令，启动Node工程
 CMD [ "yarn", "start" ]
