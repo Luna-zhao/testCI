@@ -1,6 +1,6 @@
 #node镜像版本
-FROM node:8-alpine
-# FROM testcafe/testcafe
+# FROM node:8-alpine
+FROM testcafe/testcafe
 #作者
 MAINTAINER LUNA
 
