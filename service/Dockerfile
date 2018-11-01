@@ -6,8 +6,8 @@ MAINTAINER LUNA
 
 #在image中创建文件夹
 RUN mkdir -p /home/Service41024
-RUN chown -R /home
-RUN chown -R /home/Service41024
+RUN chown -R root:root /home
+RUN chown -R root:root /home/Service41024
 
 RUN ls
 #将该文件夹作为工作目录
