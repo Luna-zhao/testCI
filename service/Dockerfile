@@ -18,7 +18,6 @@ RUN ls
 
 #使用RUN命令执行npm install安装工程依赖库
 RUN yarn
-RUN yarn test
 #暴露给主机的端口号
 EXPOSE 8888
 #执行npm start命令，启动Node工程
