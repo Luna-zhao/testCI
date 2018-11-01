@@ -5,7 +5,8 @@ FROM testcafe/testcafe
 MAINTAINER LUNA
 
 #在image中创建文件夹
-RUN ls
+RUN cd /opt/testcafe && ls
+
 RUN mkdir -p /home/Service41024
 
 #将该文件夹作为工作目录
