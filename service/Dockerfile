@@ -5,7 +5,7 @@ FROM testcafe/testcafe
 MAINTAINER LUNA
 
 #在image中创建文件夹
-RUN cd /opt/testcafe && ls
+RUN cd /opt/testcafe && yarn --version
 
 RUN mkdir -p /home/Service41024
 
