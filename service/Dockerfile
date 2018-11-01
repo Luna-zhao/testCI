@@ -5,8 +5,7 @@ FROM testcafe/testcafe
 MAINTAINER LUNA
 
 #在image中创建文件夹
-RUN cd home
-RUN ls
+RUN ls /home
 RUN mkdir -p /home/Service41024
 
 
