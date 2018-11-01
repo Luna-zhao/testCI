@@ -1,6 +1,7 @@
 #node镜像版本
-FROM node:8-alpine
-From testcafe/testcafe
+FROM testcafe/testcafe
+# FROM node:8-alpine
+
 #作者
 MAINTAINER LUNA
 
@@ -14,12 +15,11 @@ WORKDIR /home/Service41024
 # 将node工程下所有文件拷贝到Image下的文件夹中
 COPY . /home/Service41024
 
-RUN ls
-
 #使用RUN命令执行npm install安装工程依赖库
 RUN yarn
 
 #暴露给主机的端口号
 EXPOSE 8888
+
 #执行npm start命令，启动Node工程
-CMD [ "yarn", "start" ]
+CMD [ "yarn", "test" ]
