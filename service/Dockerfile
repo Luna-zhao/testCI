@@ -5,22 +5,22 @@ FROM testcafe/testcafe
 MAINTAINER LUNA
 
 #在image中创建文件夹
-RUN cd /opt/testcafe && npm --version
+RUN cd /opt/testcafe && npm i fs.promised koa koa-bodyparser koa-router koa-static
 
-RUN mkdir -p /home/Service41024
+# RUN mkdir -p /home/Service41024
 
 #将该文件夹作为工作目录
-WORKDIR /home/Service41024
+# WORKDIR /home/Service41024
 
 # 将node工程下所有文件拷贝到Image下的文件夹中
-COPY . /home/Service41024
+# COPY . /home/Service41024
 
-RUN ls
+# RUN ls
 
 #使用RUN命令执行npm install安装工程依赖库
-RUN yarn
+# RUN yarn
 
 #暴露给主机的端口号
 EXPOSE 8888
 #执行npm start命令，启动Node工程
-CMD [ "yarn", "start" ]
+# CMD [ "yarn", "start" ]
