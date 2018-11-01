@@ -5,11 +5,10 @@ FROM testcafe/testcafe
 MAINTAINER LUNA
 
 #在image中创建文件夹
-RUN mkdir -p /home/Service41024
-RUN chown -R root:root /home
-RUN chown -R root:root /home/Service41024
-
 RUN ls
+RUN mkdir -p /home/Service41024
+
+
 #将该文件夹作为工作目录
 WORKDIR /home/Service41024
 
