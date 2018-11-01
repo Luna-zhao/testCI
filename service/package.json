@@ -4,7 +4,7 @@
   "description": "### Code Owners",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "testcafe chrome:headless test.js",
     "start": "node ./app.js",
     "eslint": "./node_modules/.bin/eslint . --ext .js"
   },
@@ -25,7 +25,8 @@
     "koa": "^2.5.3",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
-    "koa-static": "^5.0.0"
+    "koa-static": "^5.0.0",
+    "testcafe": "^0.23.0"
   },
   "devDependencies": {
     "eslint": "^5.7.0",
