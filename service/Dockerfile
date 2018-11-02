@@ -3,19 +3,19 @@ FROM testcafe/testcafe
 USER root
 RUN cd /opt/testcafe && npm i fs.promised koa koa-bodyparser koa-router koa-static
 
-RUN cat /opt/testcafe/package.json
+# RUN cat /opt/testcafe/package.json
 #作者
 # MAINTAINER LUNA
 
 #在image中创建文件夹
-RUN mkdir -p /home/Service41024
+# RUN mkdir -p /home/Service41024
 
 # RUN ls
 #将该文件夹作为工作目录
-WORKDIR /home/Service41024
+WORKDIR /opt/testcafe/
 
 # 将node工程下所有文件拷贝到Image下的文件夹中
-COPY . /home/Service41024
+COPY . /opt/testcafe/
 
 RUN ls
 
@@ -26,3 +26,5 @@ RUN ls
 # EXPOSE 8888
 #执行npm start命令，启动Node工程
 # CMD [ "yarn", "start" ]
+  
+CMD [ "testcafe", "chrome:headless", "test.js" ]
