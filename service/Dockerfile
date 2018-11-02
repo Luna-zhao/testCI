@@ -3,7 +3,7 @@ FROM testcafe/testcafe
 USER root
 RUN cd /opt/testcafe && npm i fs.promised koa koa-bodyparser koa-router koa-static
 
-# RUN cat /opt/testcafe/package.json
+RUN cat /opt/testcafe/package.json
 #作者
 # MAINTAINER LUNA
 
