@@ -9,7 +9,7 @@ RUN mkdir -p /home/Service41024
 
 # RUN ls
 #将该文件夹作为工作目录
-# WORKDIR /home/Service41024
+WORKDIR /home/Service41024
 
 # 将node工程下所有文件拷贝到Image下的文件夹中
 COPY . /home/Service41024
