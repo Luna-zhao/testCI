@@ -1,5 +1,5 @@
 #node镜像版本
-FROM testcafe
+FROM node:8-alpine
 
 #作者
 MAINTAINER LUNA
