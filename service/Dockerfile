@@ -1,6 +1,6 @@
 #node镜像版本
 FROM testcafe/testcafe 
-
+USER root
 RUN cd /opt/testcafe && ls &&  npm i fs.promised koa koa-bodyparser koa-router koa-static
 
 RUN cat /opt/testcafe/package.json
