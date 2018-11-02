@@ -20,7 +20,7 @@ COPY . /home/Service41024
 # RUN ls
 
 #使用RUN命令执行npm install安装工程依赖库
-RUN yarn
+# RUN yarn
 
 #暴露给主机的端口号
 # EXPOSE 8888
